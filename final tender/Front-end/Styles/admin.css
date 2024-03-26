@@ -1,0 +1,128 @@
+body {
+    background-image: url('/Front-end/Resources/teal.jpg'); /* Specify the path to your background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #008080;
+    margin: 0;
+    padding: 0;
+    opacity: 100%;
+    font-family: "TT_Norms_Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+#title {
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 10px;
+}
+
+
+
+#home a {
+    color:#008080;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+#main-container {
+    margin: auto;
+    margin-top: 6%;
+    width: 60%;
+    box-shadow: #007bff 0px 0px 0px 2px,
+        #5ca6f6 0px 4px 6px -1px,
+        #bfdaf6 0px 1px 0px inset;
+    padding: 40px 20px;
+    border-radius: 7px;
+    margin-bottom: 100px;
+}
+
+#title {
+    text-align: center;
+    font-size: larger;
+}
+
+#list {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#list button {
+    text-decoration: none;
+    font-style: inherit;
+    color: #0800ff;
+    font-size: 25px;
+    font-weight: 600;
+    transition: font-size 0.5s;
+    background-color: transparent;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    padding: 15px 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#list button:hover {
+    color: #044a95;
+    background-color: #007bff;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+#list {
+    /* list-style: none; */
+    color: #007bff;
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 290px;
+}
+
+
+
+#list a {
+    text-decoration: none;
+    font-style: inherit;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+    transition: font-size 0.5s;
+    padding-left: 10px;
+}
+
+#list a:hover {
+    color:  #7FFFD4;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background-color: #FFE5B4;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+}
+
+button:hover,
+#form input[type="submit"] {
+    background-color: #FFE5B4;
+}
+
+@media screen and (max-width: 1024px) {
+    #list {
+        padding-left: 20px;
+    }
+
+    #title {
+        font-size: medium;
+    }
+
+    #list a {
+        font-size: 20px;
+    }
+}

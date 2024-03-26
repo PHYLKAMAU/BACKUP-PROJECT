@@ -1,0 +1,82 @@
+/* Set up basic styles for the page */
+body {
+  background-image: url('/Front-end/Resources/teal.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #008080; /* Set background color to teal */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+table {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+thead {
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+/* Set up styles for the button */
+button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#placeBidButton {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#placeBidButton:hover {
+  background-color: #005fa3;
+}
+
+
+/* Set up animations for the table */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the table rows */
+tbody tr {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+  

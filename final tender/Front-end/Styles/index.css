@@ -1,0 +1,253 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    background-image: url('/Front-end/Resources/teal.jpg'); /* Specify the path to your background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #008080;
+    margin: 0;
+    padding: 0;
+
+    font-family: "TT_Norms_Pro", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen-Sans, "Fira Sans", "Droid Sans", Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Navigation Bar */
+#nav-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.nav-bottom {
+    height: auto;
+    background-color: transparent; /* Transparent background */
+    color: #99FFFF; /* Sky Blue */
+    margin: auto;
+}
+
+.nav-bottom > div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+}
+
+.nav-bottom img {
+    margin-top: 2px;
+    width: 45px;
+}
+
+#logoMain {
+    text-decoration: none;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+.nav-bottom > div > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: small;
+}
+
+.nav-left {
+    width: 35%;
+}
+
+.nav-right {
+    width: 35%;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.nav-bottom button {
+    border: none;
+    background-color: #fff;
+    color: #51d0de; /* Sky Blue */
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+
+#start,
+#login {
+    background-color: white;
+    color: #51d0de; /* Sky Blue */
+    padding: 12px 25px;
+    border-radius: 6px;
+}
+
+/* Main Section */
+main {
+    background-color: #008080; /* Brain Wrinkle White */
+}
+
+.firstSection {
+    background-image: url('/Front-end/Resources/teal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 460px;
+    width: 100%;
+    padding: 80px 0px 100px;
+    margin-top: 65px;
+}
+
+.firstSection > div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.firstSection h1 {
+    width: 600px;
+    height: 216px;
+    color: #FFFFFF; /* Lightning Purple */
+    font-size: 55px;
+}
+
+.firstSection p {
+    height: 64px;
+    width: 600px;
+    font-size: 20px;
+    color: #FFE5B4; /* Lightning Purple */
+    margin: 20px 0px;
+    margin-bottom: 50px;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.align button {
+    border: 2px solid #0461c5;
+    background-color: white;
+    color: #51d0de; /* Sky Blue */
+    padding: 15px 26px;
+    border-radius: 8px;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+}
+
+.align button:hover,
+#start:hover,
+#login:hover,
+.get > button:hover {
+    cursor: pointer;
+    background-color: #d1def7;
+    transition: 0.5s;
+}
+
+.none > img {
+    width: 125%;
+}
+
+/* Footer */
+#footer {
+    color: #FFFFFF; /* Lightning Purple */
+    padding: 25px;
+}
+
+#footer > div {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+#footer hr {
+    color: #FFFFFF; /* Lightning Purple */
+    opacity: 0.4;
+    margin-top: 5px;
+}
+
+/* Header and Footer Text */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF; /* Lightning Purple */
+}
+
+a {
+    color: #51d0de; /* Sky Blue */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    /* Navigation */
+    .nav-bottom > div {
+        padding: 12px;
+    }
+
+    .nav-bottom h2 {
+        font-size: 14px;
+    }
+
+    #logoMain {
+        text-decoration: none;
+        border-radius: 0px;
+        padding: 0px;
+    }
+
+    .nav-left {
+        width: 50%;
+    }
+
+    .nav-right {
+        width: 50%;
+    }
+
+    #start,
+    #login {
+        padding: 10px 20px;
+    }
+
+    /* Main Section */
+    .firstSection {
+        height: auto;
+        text-align: center;
+    }
+
+    .firstSection > div {
+        flex-direction: column;
+    }
+
+    .firstSection h1 {
+        font-size: 44px;
+        width: auto;
+    }
+
+    .firstSection p {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .none > img {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .align {
+        justify-content: center;
+    }
+}
